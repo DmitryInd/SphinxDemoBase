@@ -1,3 +1,4 @@
+DROP VIEW IF EXISTS management_electric_trains.full_ticket;
 CREATE VIEW management_electric_trains.full_ticket as (
     SELECT y.ticket_id, y.buyer_first_nm, y.buyer_second_nm, y.purchase_dttm,
            x.trip_price_amt, x.departure_type_cd, x.sale_flg as sale_yet_flg,
